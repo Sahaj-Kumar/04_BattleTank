@@ -28,8 +28,18 @@ private:
 
 	// aim the barrel to where firing would hit crosshair
 	void AimTowardsCrossHair();
-
 	// returns out parameter OutHitLocation, and returns true if location is in landscape
 	bool GetSightRayHitLocation(FVector& OutHitLocation) const;
+	bool GetLookDirection(FVector2D ScreenLocation, FVector& LookDirection) const;
+
+	UPROPERTY(EditAnywhere)
+	float CrossHairXLocation = 0.5f;
+	UPROPERTY(EditAnywhere)
+	float CrossHairYLocation = 0.33333f;
+
+	UPROPERTY(EditAnywhere)
+	float LineTraceRange = 1000000.0f;
+
+	bool GetLookVectorHitLocation(FVector LookDirection, FVector& HitDirection) const;
 	
 };
