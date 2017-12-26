@@ -3,6 +3,7 @@
 #include "TankAimingComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "TankBarrelA.h"
+#include "TankTurret.h"
 #include "Runtime/Engine/Classes/GameFramework/Actor.h"
 #include "Runtime/Engine/Classes/Components/StaticMeshComponent.h"
 
@@ -12,7 +13,7 @@ UTankAimingComponent::UTankAimingComponent()
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
+	PrimaryComponentTick.bCanEverTick = false;
 	// ...
 }
 
@@ -79,6 +80,6 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 
 	// move the barrel the right amount this frame
 	Barrel->Elevate(DeltaRotator.Pitch);
-
+	Turret->Rotate(DeltaRotator.Yaw);
 }
 
