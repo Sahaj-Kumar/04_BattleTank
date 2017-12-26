@@ -9,6 +9,7 @@
 // Forward Declarations
 class UTankBarrelA;
 class UTankAimingComponent;
+class UTankTurret;
 
 UCLASS()
 class BATTLETANK_API ATank : public APawn
@@ -27,6 +28,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Setup)
 	void SetBarrelReference(UTankBarrelA* BarrelToSet);
 
+	UFUNCTION(BlueprintCallable, Category = Setup)
+	void SetTurretReference(UTankTurret* BarrelToSet);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -36,7 +40,7 @@ protected:
 private:
 
 	UPROPERTY(EditAnywhere, Category = Firing)
-	float LaunchSpeed = 100000; // TODO find sensible default
+	float LaunchSpeed = 8000; // TODO find sensible default
 	
 	
 };
