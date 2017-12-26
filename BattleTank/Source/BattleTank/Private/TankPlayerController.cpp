@@ -2,7 +2,7 @@
 
 
 #include "TankPlayerController.h"
-
+#include "Tank.h"
 
 // Called every frame
 void ATankPlayerController::Tick(float DeltaTime)
