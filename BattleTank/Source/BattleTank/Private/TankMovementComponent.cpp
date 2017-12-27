@@ -5,7 +5,7 @@
 void UTankMovementComponent::IntendMoveForward(float Throw)
 {
 	auto Name = GetName();
-	UE_LOG(LogTemp, Warning, TEXT("Intend Move Forward Throw"), Throw);
+	UE_LOG(LogTemp, Warning, TEXT("Intend Move Forward Throw %f"), Throw);
 
 }
 

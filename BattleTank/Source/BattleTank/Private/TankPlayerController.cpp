@@ -9,7 +9,7 @@ void ATankPlayerController::Tick(float DeltaTime)
 {
 	Super::Tick( DeltaTime );
 	AimTowardsCrossHair();
-	//UE_LOG(LogTemp, Warning, TEXT("Player controller ticking"));
+	//U/E_LOG(LogTemp, Warning, TEXT("Player controller ticking"));
 }
 
 
