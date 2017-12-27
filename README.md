@@ -6,3 +6,5 @@ Follows Unreal Engine course by Ben Tristam on Udemy.
 * Intro, Notes and Assets
 * Game Design Document (GDD)
 * Setting Up a Github "Repo"
+* ... A bunch of other lessons ...
+* CHALLENGE - Turret Rotation Pt. 2
