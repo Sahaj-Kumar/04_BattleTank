@@ -26,4 +26,6 @@ public:
 
 private:
 
+	// How class does AI tank get to player
+	float AcceptanceRadius = 3000;
 };

@@ -4,7 +4,7 @@
 
 void UTankTurret::Rotate(float RelativeSpeed)
 {
-	//UE_LOG(LogTemp, Warning, TEXT("%f: Barrel Elevate called at %f"), Time, RelativeSpeed);
+	//U/E_LOG(LogTemp, Warning, TEXT("%f: Barrel Elevate called at %f"), Time, RelativeSpeed);
 
 	RelativeSpeed = FMath::Clamp<float>(RelativeSpeed, -1, 1);
 	auto RotationChange = RelativeSpeed * MaxDegreesPerSecond * GetWorld()->DeltaTimeSeconds;
