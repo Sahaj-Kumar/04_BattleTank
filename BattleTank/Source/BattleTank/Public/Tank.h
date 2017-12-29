@@ -35,6 +35,7 @@ protected:
 
 private:
 
+	// TODO remove once firing is moved to aiming component
 	UPROPERTY(EditAnywhere, Category = "Firing")
 	float LaunchSpeed = 4000;
 
