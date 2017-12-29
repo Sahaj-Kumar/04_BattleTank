@@ -30,7 +30,7 @@ public:
 	// Sets default values for this component's properties
 	UTankAimingComponent();
 
-	void AimAt(FVector WorldSpaceAim, float LaunchSpeed);
+	void AimAt(FVector HitLocation);
 
 	UFUNCTION(BlueprintCallable, Category = "Setup")
 	void Initialize(UTankBarrelA* BarrelToSet, UTankTurret * TurretToSet);
@@ -43,6 +43,9 @@ private:
 	UTankBarrelA* Barrel = nullptr;
 	UTankTurret* Turret = nullptr;
 	void MoveBarrelTowards(FVector AimDirection);
+
+	UPROPERTY(EditAnywhere, Category = "Firing")
+	float LaunchSpeed = 4000;
 
 
 	
