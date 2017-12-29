@@ -47,6 +47,7 @@ private:
 	UTankBarrelA* Barrel = nullptr;
 	UTankTurret* Turret = nullptr;
 	void MoveBarrelTowards(FVector AimDirection);
+	bool isBarrelMoving();
 	virtual void BeginPlay() override;
 	virtual void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction * ThisTickFunction) override;
 
@@ -58,5 +59,6 @@ private:
 
 	float ReloadTimeInSeconds = 3;
 	double LastFireTime = 0;
+	FVector AimDirection;
 	
 };
