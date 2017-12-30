@@ -48,7 +48,7 @@ bool UTankAimingComponent::isBarrelMoving()
 
 }
 
-int UTankAimingComponent::GetRoundsLeft() const { return RoundsLeft; }
+int32 UTankAimingComponent::GetRoundsLeft() const { return RoundsLeft; }
 
 void UTankAimingComponent::AimAt(FVector HitLocation)
 {
