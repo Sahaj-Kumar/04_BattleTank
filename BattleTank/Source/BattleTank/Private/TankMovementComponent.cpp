@@ -9,8 +9,6 @@ void UTankMovementComponent::Initialize(UTankTrack* LeftTrackToSet, UTankTrack* 
 
 	LeftTrack = LeftTrackToSet;
 	RightTrack = RightTrackToSet;
-
-	UE_LOG(LogTemp, Warning, TEXT("FOOBAR: %s, %s"), *LeftTrack->GetName(), *RightTrack->GetName())
 }
 
 void UTankMovementComponent::RequestDirectMove(const FVector & MoveVelocity, bool bForceMaxSpeed)
