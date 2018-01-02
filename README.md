@@ -11,4 +11,4 @@ Follows Unreal Engine course by Ben Tristam on Udemy.
 * *all the remaining lectures*
 
 ## What's next?
-Intend to add my own additional features, such as a regular emeny tank/mortar spawning, ammo pickups, score tracking.
+Intend to add my own additional features, such as a regular enemy tank/mortar spawning, ammo pickups, score tracking.
