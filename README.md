@@ -6,5 +6,9 @@ Follows Unreal Engine course by Ben Tristam on Udemy.
 * Intro, Notes and Assets
 * Game Design Document (GDD)
 * Setting Up a Github "Repo"
-* ... A bunch of other lessons ...
+* *... A bunch of other lessons ...*
 * CHALLENGE - Turret Rotation Pt. 2
+* *all the remaining lectures*
+
+## What's next?
+Intend to add my own additional features, such as a regular emeny tank/mortar spawning, ammo pickups, score tracking.
