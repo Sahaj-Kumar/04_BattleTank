@@ -8,7 +8,7 @@ Follows Unreal Engine course by Ben Tristam on Udemy.
 * Setting Up a Github "Repo"
 * *... A bunch of other lessons ...*
 * CHALLENGE - Turret Rotation Pt. 2
-* *all the remaining lectures*
+* *the remaining ~100 lectures*
 
 ## What's next?
 Intend to add my own additional features, such as a regular enemy tank/mortar spawning, ammo pickups, score tracking.
